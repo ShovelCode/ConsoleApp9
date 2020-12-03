@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace ConsoleApp9
 {
     class Program
@@ -16,6 +16,17 @@ namespace ConsoleApp9
             {
                 Console.WriteLine(item);
             }
+
+            var cities2 = new List<string>(); //a list not a long string
+            cities2.Add("London");
+            cities2.Add("Paris");
+            cities2.Add("Milan");
+            cities2.Insert(0, "Sydney");
+            foreach(string city in cities2)
+            {
+                Console.WriteLine($"   {city}");
+            }
+
         }
     }
 }
