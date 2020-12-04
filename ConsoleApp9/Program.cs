@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Net.NetworkInformation;
 
 namespace ConsoleApp9
 {
@@ -30,7 +31,8 @@ namespace ConsoleApp9
             }
 
             //mapSample();
-            analyze_Url();
+            //analyze_Url();
+            makePing();
 
         }
 
@@ -57,6 +59,17 @@ namespace ConsoleApp9
             {
                 Console.WriteLine($"  {item.Key}: {item.Value}");
             }
+        }
+
+        static void makePing()
+        {
+            Console.Write("Enter a valid web address.");
+            string url = Console.ReadLine();
+            var uri = new Uri(url);
+
+            var ping = new Ping();
+            PingReply reply = ping.Send(uri.Host);
+            Console.WriteLine(reply.Address);
         }
     }
 }
