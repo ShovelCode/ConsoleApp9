@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 
 namespace ConsoleApp9
 {
@@ -28,7 +29,18 @@ namespace ConsoleApp9
                 Console.WriteLine($"   {city}");
             }
 
-            mapSample();
+            //mapSample();
+            analyze_Url();
+
+        }
+
+        static void analyze_Url()
+        {
+            Console.Write("Enter a valid web address.");
+            string url = Console.ReadLine();
+            var uri = new Uri(url);
+            Console.WriteLine(uri.Host);
+            Console.WriteLine(uri.Query);
 
         }
 
