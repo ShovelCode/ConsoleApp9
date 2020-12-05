@@ -64,12 +64,19 @@ namespace ConsoleApp9
         static void makePing()
         {
             Console.Write("Enter a valid web address.");
-            string url = Console.ReadLine();
-            var uri = new Uri(url);
+            try
+            {
+                string url = Console.ReadLine();
+                var uri = new Uri(url);
 
-            var ping = new Ping();
-            PingReply reply = ping.Send(uri.Host);
-            Console.WriteLine(reply.Address);
+                var ping = new Ping();
+                PingReply reply = ping.Send(uri.Host);
+                Console.WriteLine(reply.Address);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("oops!  \n" + ex.ToString());
+            }
         }
     }
 }
