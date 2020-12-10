@@ -32,7 +32,8 @@ namespace ConsoleApp9
 
             //mapSample();
             //analyze_Url();
-            makePing();
+            //makePing();
+            testControl();
 
         }
 
@@ -77,6 +78,11 @@ namespace ConsoleApp9
             {
                 Console.WriteLine("oops!  \n" + ex.ToString());
             }
+        }
+
+        static void testControl()
+        {
+            Console.WriteLine("In textControl method");
         }
     }
 }
