@@ -33,8 +33,15 @@ namespace ConsoleApp9
             //mapSample();
             //analyze_Url();
             //makePing();
-            dataTypeSample();
+            //dataTypeSample();
+            dataBaseInfo();
 
+        }
+
+        static void dataBaseInfo()
+        {
+            Console.WriteLine("Object-relational mapping ORM, ORM associates columns in tables to properties" +
+                "in classes");
         }
 
         static void analyze_Url()
