@@ -9,13 +9,25 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
+            
+            //mapSample();
+            //analyze_Url();
+            //makePing();
+            //dataTypeSample();
+            dataBaseInfo();
+            displayCityList();
+
+        }
+
+        static void displayCityList()
+        {
             Console.WriteLine("Test String");
 
             string cities = "Paris,Berlin,Madrid,New York,Comma Town";
 
             string[] citiesArray = cities.Split(',');
 
-            foreach( string item in citiesArray)
+            foreach (string item in citiesArray)
             {
                 Console.WriteLine(item);
             }
@@ -25,22 +37,16 @@ namespace ConsoleApp9
             cities2.Add("Paris");
             cities2.Add("Milan");
             cities2.Insert(0, "Sydney");
-            foreach(string city in cities2)
+            foreach (string city in cities2)
             {
                 Console.WriteLine($"   {city}");
             }
-
-            //mapSample();
-            //analyze_Url();
-            //makePing();
-            //dataTypeSample();
-            dataBaseInfo();
 
         }
 
         static void dataBaseInfo()
         {
-            Console.WriteLine("Object-relational mapping ORM, ORM associates columns in tables to properties" +
+            Console.WriteLine("Object-relational mapping ORM, ORM associates columns in tables to properties " +
                 "in classes");
         }
 
