@@ -9,13 +9,17 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
-            
+
             //mapSample();
             //analyze_Url();
             //makePing();
             //dataTypeSample();
-            dataBaseInfo();
-            displayCityList();
+            //dataBaseInfo();
+            //displayCityList();
+
+            Protector pt = new Protector();
+            Console.WriteLine(pt.ToString());
+            Protector.sayHello();
 
         }
 

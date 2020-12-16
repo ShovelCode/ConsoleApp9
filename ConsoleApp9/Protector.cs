@@ -9,8 +9,17 @@ using static System.Convert;
 
 namespace ConsoleApp9
 {
-    class Protector
+    public class Protector
     {
-        private static readonly byte[] salt = Encoding.Unicode.GetBytes("7Bananas");
+        //private static readonly byte[] salt = Encoding.Unicode.GetBytes("7Bananas");
+        private int num = 0;
+        public Protector()
+        {
+            num += 1;
+        }
+        public static void sayHello()
+        {
+            Console.WriteLine("method of Protector");
+        }
     }
 }
