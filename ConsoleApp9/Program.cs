@@ -20,6 +20,7 @@ namespace ConsoleApp9
             Protector pt = new Protector();
             Console.WriteLine(pt.ToString());
             Protector.sayHello();
+            pt.sayHello2();
 
         }
 

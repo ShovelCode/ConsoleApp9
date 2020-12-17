@@ -21,5 +21,10 @@ namespace ConsoleApp9
         {
             Console.WriteLine("method of Protector");
         }
+
+        public void sayHello2()
+        {
+            Console.WriteLine("not a static method");
+        }
     }
 }
