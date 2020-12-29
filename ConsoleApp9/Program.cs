@@ -25,6 +25,8 @@ namespace ConsoleApp9
             Class1 c1 = new Class1();
             Class1.class1Hello();
 
+            Thing thing = new Item();
+
         }
 
         static void displayCityList()
